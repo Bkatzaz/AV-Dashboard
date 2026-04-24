@@ -606,7 +606,21 @@ const DATA = [
 
   // Tesla
   { region:'us', city:'Austin, TX',           vendor:'Tesla',  type:'supervised_commercial', lat:30.2672, lng:-97.7431,
-    details:'~400 robotaxis with FSD + human safety monitors. Launched June 2025. Cybercab (purpose-built) production begins April 2026.', segment:'Mobility' },
+    details:'[Robotaxi] ~400 Model Y robotaxis with FSD + human safety monitors. Launched June 2025. Cybercab (no steering wheel/pedals) production began April 24, 2026 — purpose-built driverless EV, sub-$30K.', segment:'Mobility' },
+  { region:'us', city:'Dallas, TX',           vendor:'Tesla',  type:'supervised_commercial', lat:32.7767, lng:-96.7970,
+    details:'[Robotaxi] FSD supervised commercial expansion — 1H 2026 rollout alongside Houston.', segment:'Mobility' },
+  { region:'us', city:'Houston, TX',          vendor:'Tesla',  type:'supervised_commercial', lat:29.7604, lng:-95.3698,
+    details:'[Robotaxi] FSD supervised commercial expansion — 1H 2026 rollout.', segment:'Mobility' },
+  { region:'us', city:'Phoenix, AZ',          vendor:'Tesla',  type:'supervised_commercial', lat:33.4484, lng:-112.0740,
+    details:'[Robotaxi] FSD supervised commercial expansion — targeted 1H 2026.', segment:'Mobility' },
+  { region:'us', city:'Miami, FL',            vendor:'Tesla',  type:'supervised_commercial', lat:25.7617, lng:-80.1918,
+    details:'[Robotaxi] FSD supervised commercial expansion — targeted 1H 2026.', segment:'Mobility' },
+  { region:'us', city:'Orlando, FL',          vendor:'Tesla',  type:'supervised_commercial', lat:28.5383, lng:-81.3792,
+    details:'[Robotaxi] FSD supervised commercial expansion — targeted 1H 2026.', segment:'Mobility' },
+  { region:'us', city:'Tampa, FL',            vendor:'Tesla',  type:'supervised_commercial', lat:27.9506, lng:-82.4572,
+    details:'[Robotaxi] FSD supervised commercial expansion — targeted 1H 2026.', segment:'Mobility' },
+  { region:'us', city:'Las Vegas, NV',        vendor:'Tesla',  type:'supervised_commercial', lat:36.1699, lng:-115.1398,
+    details:'[Robotaxi] FSD supervised commercial expansion — targeted 1H 2026.', segment:'Mobility' },
   { region:'us', city:'Chicago, IL',          vendor:'Tesla',  type:'testing', lat:41.8781, lng:-87.6298,
     details:'Cybercab spotted testing near Wrigley Field (Jan 2026). Pre-commercial mapping and validation.', segment:'Mobility' },
 
@@ -615,6 +629,10 @@ const DATA = [
     details:'~30 vehicles. Custom bidirectional pod vehicle; waitlist-based public access. Amazon-backed. "Production scale in 2026."', segment:'Mobility' },
   { region:'us', city:'Las Vegas, NV',        vendor:'Zoox',   type:'unsupervised_commercial', lat:36.1699, lng:-115.1398,
     details:'Driverless commercial service live on Zoox own app. Custom bidirectional pod — no steering wheel or pedals. Amazon subsidiary. Uber app access targeted Summer 2026.', segment:'Mobility' },
+  { region:'us', city:'Austin, TX',           vendor:'Zoox',   type:'supervised_commercial', lat:30.2672, lng:-97.7431,
+    details:'Expanded to Austin March 2026 — employees, family and friends early rider program. Custom bidirectional pod vehicle. Full public access targeted later 2026.', segment:'Mobility' },
+  { region:'us', city:'Miami, FL',            vendor:'Zoox',   type:'supervised_commercial', lat:25.7617, lng:-80.1918,
+    details:'Expanded to Miami March 2026 — employees, family and friends early rider program. Custom bidirectional pod vehicle. Full public access targeted later 2026.', segment:'Mobility' },
 
   // Aurora — Freight
   { region:'us', city:'Dallas, TX',           vendor:'Aurora', type:'freight', lat:32.7767, lng:-96.7970,
@@ -791,8 +809,8 @@ const DATA = [
     details:'AV deployment in Saudi heritage tourism destination. Robosweeper S1: region\'s first monetized autonomous sanitation project.', segment:'Utility' },
   { region:'me', city:'Ras Al Khaimah, UAE',        vendor:'WeRide',    type:'testing',                 lat:25.7895, lng:55.9432,
     details:'Exclusive deal (Oct 2025) to build emirate\'s entire transport system around driverless vehicles. Long-term city-scale contract.', segment:'Mobility' },
-  { region:'me', city:'Dubai, UAE',                 vendor:'Pony.ai',   type:'testing',                 lat:25.2048, lng:55.2708,
-    details:'Dubai RTA strategic partnership (May 2025). Phase 1 test ops started; full commercial autonomous ops planned 2026. Toyota-backed. NYSE: PONY.', segment:'Mobility' },
+  { region:'me', city:'Dubai, UAE',                 vendor:'Pony.ai',   type:'supervised_commercial',   lat:25.2048, lng:55.2708,
+    details:'Driverless robotaxi trials live April 2026 — no safety driver. Commercial fare-charging service planned later 2026. Dubai RTA strategic partnership (May 2025). Toyota-backed. NYSE: PONY.', segment:'Mobility' },
   { region:'me', city:'Abu Dhabi, UAE',             vendor:'Pony.ai',   type:'testing',                 lat:24.4539, lng:54.3773,
     details:'SAVI autonomous vehicle cluster member. $100M NEOM investment. JV for NEOM and wider MENA AV deployment.', segment:'Mobility' },
   { region:'me', city:'Dubai, UAE',                 vendor:'Apollo Go', type:'supervised_commercial',   lat:25.2048, lng:55.2708,
@@ -840,8 +858,8 @@ const DATA = [
     details:'Commercial Robotaxi and Robobus operations. Transitioning to driverless in key city zones.', segment:'Mobility' },
   { region:'asia', city:'Wuhan, China',       vendor:'WeRide',  type:'supervised_commercial',   lat:30.5928, lng:114.3055,
     details:'Robobus service operating. Expanding commercial robotaxi alongside Apollo Go presence.', segment:'Mobility' },
-  { region:'asia', city:'Singapore',          vendor:'WeRide',  type:'testing',                 lat:1.3521,  lng:103.8198,
-    details:'Robobus at Resorts World Sentosa (fully driverless, Jul 2025). Grab partnership for Punggol shuttle routes (early 2026).', segment:'Mobility' },
+  { region:'asia', city:'Singapore',          vendor:'WeRide',  type:'supervised_commercial',   lat:1.3521,  lng:103.8198,
+    details:'WeRide Robotaxi GXR live via Grab app from April 1, 2026 — safety operator onboard initially. Robobus also running at Resorts World Sentosa (driverless, Jul 2025). SE Asia expansion via Grab + NVIDIA DRIVE Hyperion.', segment:'Mobility' },
 
   // ── GRAB ─────────────────────────────────────────────────────────────
   { region:'asia', city:'Singapore',          vendor:'Grab',    type:'testing',  lat:1.3521,  lng:103.8198,
@@ -1076,7 +1094,7 @@ function updateStats(rk) {
 //  VENDOR FLEET / FUNDING METADATA
 // ════════════════════════════════════════════════
 const VENDOR_META = {
-  'Waymo':        { fleet:'~3,200+',  fleetNote:'Jaguar I-Pace + IONIQ 5 across 10 active US cities', funding:'$5.6B (Google/VC, Oct 2024)',    segment:'Mobility',           liveStatus:'Driverless commercial' },
+  'Waymo':        { fleet:'~2,500',   fleetNote:'[Robotaxi] Waymo Ojai (Zeekr-built, 6th gen) + IONIQ 5 across 10 active US cities; targeting 3,500+ by end-2026', funding:'$16B (Feb 2026; Dragoneer, DST, Sequoia) — $126B valuation',    segment:'Mobility',           liveStatus:'Driverless commercial' },
   'Pony.ai':      { fleet:'~1,350+',  fleetNote:'[Robotaxi] ~1,159 driverless robotaxis (Beijing, Shanghai, Guangzhou, Shenzhen) | [Freight] ~190 robotrucks (national)', funding:'IPO at $4.5B val; Toyota backer', segment:'Mobility / Freight', liveStatus:'Driverless commercial' },
   'WeRide':       { fleet:'~1,023+',  fleetNote:'[Robotaxi] GXR on NVIDIA DRIVE Hyperion (China + SE Asia) | [Robobus] E12-based robobuses (Guangzhou, Wuhan, Riyadh) | [Utility] street sweepers + sanitation AVs', funding:'Dual-listed NYSE+HKEX',  segment:'Mobility / Utility', liveStatus:'Driverless commercial' },
   'Apollo Go':    { fleet:'~1,000+',  fleetNote:'RT6 robotaxis across China; 100 in Dubai 2025', funding:'Baidu (BIDU)',               segment:'Mobility',           liveStatus:'Driverless commercial' },
@@ -1084,7 +1102,7 @@ const VENDOR_META = {
   'Motional':     { fleet:'~200',     fleetNote:'IONIQ 5 robotaxi; relaunched Las Vegas Mar 2026 (supervised → driverless end-2026)', funding:'$475M Hyundai (2024)', segment:'Mobility', liveStatus:'Supervised commercial' },
   'Zoox':         { fleet:'~45',      fleetNote:'Custom bidirectional pod; SF commercial + LV test', funding:'Amazon (AMZN)',          segment:'Mobility',           liveStatus:'Driverless commercial' },
   'Cartken':      { fleet:'200+',     fleetNote:'[Sidewalk Delivery Robot] Uber Eats integration; Tokyo metro + US campus deployments', funding:'$22.5M (Jul 2024)',              segment:'Delivery',           liveStatus:'Supervised commercial' },
-  'Avride (Robotaxi)':  { fleet:'~30',  fleetNote:'[Robotaxi] Hyundai IONIQ 5 supervised commercial on Uber platform — Austin, TX + Dallas, TX', funding:'NVIDIA / Uber-backed', segment:'Mobility', liveStatus:'Supervised commercial' },
+  'Avride (Robotaxi)':  { fleet:'~200', fleetNote:'[Robotaxi] Hyundai IONIQ 5 supervised commercial on Uber platform — Austin, TX + Dallas, TX; testing expanding in Austin', funding:'NVIDIA / Uber-backed', segment:'Mobility', liveStatus:'Supervised commercial' },
   'Avride (Delivery)':  { fleet:'~270+',fleetNote:'[Sidewalk Delivery] Autonomous sidewalk delivery robots — Austin metro + campus deployments; scaling nationally', funding:'NVIDIA / Uber-backed', segment:'Delivery', liveStatus:'Supervised commercial' },
   'Mobileye':     { fleet:'~100',     fleetNote:'VW ID. Buzz AD precommercial fleet; ADAS licensor to OEMs; LA commercial launch targeted 2026', funding:'Intel (MBLY)',               segment:'ADAS / Mobility',    liveStatus:'Testing / Precommercial' },
   'Wayve':        { fleet:'~20',      fleetNote:'I-Pace, Mach-E, e9 vans; UK + US testing',   funding:'$1B — SoftBank/NVIDIA/MSFT (May 2024)', segment:'Mobility',   liveStatus:'Supervised / Testing' },
@@ -1113,8 +1131,8 @@ const VENDOR_META = {
 
 // Fleet size numeric estimate for bar chart (approximate, for sorting/scaling)
 const FLEET_NUM = {
-  'Waymo':3200,'Pony.ai':1350,'WeRide':1023,'Apollo Go':1000,'Tesla':400,
-  'Motional':200,'Zoox':45,'Cartken':200,'Avride':300,'Avride (Robotaxi)':30,'Avride (Delivery)':270,'Mobileye':100,
+  'Waymo':2500,'Pony.ai':1350,'WeRide':1023,'Apollo Go':1000,'Tesla':400,
+  'Motional':200,'Zoox':45,'Cartken':200,'Avride':470,'Avride (Robotaxi)':200,'Avride (Delivery)':270,'Mobileye':100,
   'Wayve':20,'Aurora':8,'May Mobility':12,'Nuro':100,'Torc':20,'Waabi':20,'Xpeng':0,'Momenta':20,
   'Serve Robotics':2000,'Coco':1000,'Starship':2700,
   'Stellantis':5000,'Mercedes-Benz':0,'Kodiak':10,
@@ -1449,9 +1467,16 @@ const TIMELINE_EVENTS = [
   { date:'2026-03', region:'asia',   vendor:'Wayve',        city:'GTC 2026 / Tokyo, Japan',  event:'Wayve & Nissan exhibit NVIDIA DRIVE Hyperion-powered global robotaxi prototype at GTC 2026 — vehicle platform for Uber Tokyo trials (late 2026)', evType:'deal' },
   { date:'2026-03', region:'us',     vendor:'Mercedes-Benz',city:'San Francisco, CA / Los Angeles, CA', event:'Uber × NVIDIA announce 28-city global AV deployment plan across four continents by 2028 — SF and LA launch 1H 2027; Mercedes-Benz S-Class (NVIDIA DRIVE Hyperion) named as launch vehicle; Grab, Bolt, and Lyft join as additional ride-hailing platform partners', evType:'deal' },
   { date:'2026-03', region:'us',     vendor:'Rivian',       city:'San Francisco, CA / Miami, FL', event:'Uber & Rivian announce $1.25B partnership — up to 50,000 autonomous R2 robotaxis on Uber exclusively; SF + Miami launch 2028; 25 US/Canada/Europe cities by 2031. Rivian\'s in-house 3rd-gen autonomy stack (RAP1 chips, 1,600 TOPS).', evType:'deal' },
+  { date:'2026-04', region:'us',     vendor:'Tesla',        city:'Austin, TX',          event:'Tesla Cybercab production begins — purpose-built driverless EV (no steering wheel/pedals) rolling off factory floor; sub-$30K target price; Musk announces Apr 24 2026', evType:'launch' },
+  { date:'2026-04', region:'me',     vendor:'Pony.ai',      city:'Dubai, UAE',          event:'Pony.ai driverless robotaxi trials go live in Dubai — no safety driver; commercial fare-charging service planned later 2026', evType:'launch' },
+  { date:'2026-04', region:'asia',   vendor:'WeRide',       city:'Singapore',           event:'WeRide Robotaxi GXR launches via Grab app in Singapore (April 1) — safety operator onboard initially; SE Asia expansion via NVIDIA DRIVE Hyperion + Grab platform', evType:'launch' },
+  { date:'2026-03', region:'us',     vendor:'Zoox',         city:'Austin, TX / Miami, FL', event:'Zoox expands to Austin and Miami (March 24) — employee and early rider program; custom bidirectional pod vehicle; full public access later 2026', evType:'expansion' },
   { date:'2026-03', region:'us',     vendor:'Motional',     city:'Las Vegas, NV',       event:'Motional relaunches on Uber in Las Vegas — IONIQ 5 robotaxi with safety operator; Resorts World, Encore/Wynn, Westgate, Downtown & Town Square zones. Fully driverless by end-2026.', evType:'launch' },
   { date:'2026-03', region:'me',     vendor:'Apollo Go',    city:'Dubai, UAE',          event:'Apollo Go launches on Uber app in Dubai (Jumeirah area) — RT6 robotaxis, Feb/Mar 2026', evType:'launch' },
   // ── FEBRUARY 2026 ───────────────────────────────────────────────────
+  { date:'2026-02', region:'us',     vendor:'Waymo',        city:'Dallas / Houston / San Antonio / Orlando', event:'Waymo launches fully driverless commercial service in 4 new US cities simultaneously (Feb 24) — Dallas, Houston, San Antonio, Orlando; total commercial metros now 10', evType:'launch' },
+  { date:'2026-02', region:'us',     vendor:'Waymo',        city:'Multiple US Cities',  event:'Waymo raises $16B at $126B valuation (Feb 2026) — led by Dragoneer, DST Global, Sequoia; funding 20+ city expansion plan including London and Tokyo; fleet targeting 3,500+ by end-2026', evType:'deal' },
+  { date:'2026-02', region:'us',     vendor:'Waymo',        city:'San Francisco + Los Angeles', event:'Waymo Ojai robotaxi begins deployment — 6th gen purpose-built EV (formerly Zeekr RT); 13 cameras, 4 lidars, 6 radars; 42% sensor reduction vs prior gen', evType:'launch' },
   { date:'2026-02', region:'us',     vendor:'Mercedes-Benz',city:'San Francisco, CA',   event:'L4 Mercedes-Benz S-Class with NVIDIA DRIVE Hyperion begins testing in SF — inaugural vehicle for Uber/NVIDIA 28-city global AV plan', evType:'testing' },
   // ── JANUARY 2026 ────────────────────────────────────────────────────
   { date:'2026-01', region:'us',     vendor:'Waymo',        city:'Austin, TX',          event:'Waymo One + Uber live in Austin — fully driverless commercial service Jan 2026', evType:'launch' },
@@ -1904,9 +1929,9 @@ const FUNDING_DATA = [
 //  OEM PARTNERSHIPS DATA
 // ════════════════════════════════════════════════
 const OEM_DATA = [
-  { oem:'Jaguar Land Rover (Tata Motors)', logo:'🐆', avPartner:'Waymo', vehicleModel:'Jaguar I-Pace (Gen 5, legacy fleet)', role:'Vehicle supplier (transitioning out)', notes:'Waymo\'s 5th generation fleet was built on the Jaguar I-Pace electric SUV — the platform that powered Waymo\'s first commercial driverless deployments in Phoenix and San Francisco from 2020. JLR is a subsidiary of India\'s Tata Motors. As Zeekr RT (Gen 6) vehicles arrive from China, I-Pace units are being phased out; some remain in active service as of early 2026.' },
-  { oem:'Zeekr (Geely Group)', logo:'🟢', avPartner:'Waymo',  vehicleModel:'Zeekr RT (Waymo 6th Gen robotaxi)', role:'Vehicle supplier', notes:'Waymo\'s 6th generation robotaxi is the Zeekr RT — a purpose-built AV manufactured by Zeekr (Geely\'s premium EV brand) in China. Announced Oct 2023; vehicles shipping to US from 2024. The Zeekr RT replaces Jaguar I-Pace and is being produced alongside Hyundai IONIQ 5 to rapidly scale Waymo\'s fleet toward 3,200+ vehicles. Geely Group is China\'s largest private automaker.' },
-  { oem:'Hyundai Motor', logo:'🔵', avPartner:'Waymo',       vehicleModel:'IONIQ 5 (current US fleet platform)', role:'Vehicle supplier', notes:'Hyundai IONIQ 5 is Waymo\'s primary current-generation US robotaxi platform (~2,000+ of the 3,200 fleet). Waymo is now a dual-OEM operator: IONIQ 5 for existing US routes + Zeekr RT (Geely, 6th gen) for fleet scale-up. Earlier generation used Jaguar I-Pace.' },
+  { oem:'Jaguar Land Rover (Tata Motors)', logo:'🐆', avPartner:'Waymo', vehicleModel:'Jaguar I-Pace (Gen 5, legacy fleet)', role:'Vehicle supplier (transitioning out)', notes:'Waymo\'s 5th generation fleet was built on the Jaguar I-Pace electric SUV — the platform that powered Waymo\'s first commercial driverless deployments in Phoenix and San Francisco from 2020. JLR is a subsidiary of India\'s Tata Motors. As Waymo Ojai (Gen 6, Zeekr-built) vehicles arrive from China, I-Pace units are being phased out; some remain in active service as of early 2026.' },
+  { oem:'Zeekr (Geely Group)', logo:'🟢', avPartner:'Waymo',  vehicleModel:'Waymo Ojai (6th Gen robotaxi, formerly Zeekr RT)', role:'Vehicle supplier', notes:'Waymo\'s 6th generation robotaxi — officially named the "Waymo Ojai" (unveiled CES Jan 2026). Purpose-built EV manufactured by Zeekr (Geely\'s premium EV brand) in China. Features 13 cameras, 4 lidars, 6 radars — 42% fewer sensors than prior gen. Deploying across SF, LA, Dallas, Houston, Miami and more throughout 2026. Replaces Jaguar I-Pace; produced alongside Hyundai IONIQ 5. Geely Group is China\'s largest private automaker.' },
+  { oem:'Hyundai Motor', logo:'🔵', avPartner:'Waymo',       vehicleModel:'IONIQ 5 (current US fleet platform)', role:'Vehicle supplier', notes:'Hyundai IONIQ 5 is Waymo\'s primary current-generation US robotaxi platform. Waymo is now a dual-OEM operator: IONIQ 5 for existing US routes + Waymo Ojai (Zeekr-built, 6th gen) for fleet scale-up toward 3,500+ vehicles by end-2026. Earlier generation used Jaguar I-Pace.' },
   { oem:'Hyundai Motor', logo:'🔵', avPartner:'Motional',    vehicleModel:'IONIQ 5',                            role:'JV partner (50%)',  notes:'Hyundai-Aptiv JV. IONIQ 5 purpose-built robotaxi version. Las Vegas Uber relaunch Mar 2026.' },
   { oem:'Hyundai Motor', logo:'🔵', avPartner:'Avride',      vehicleModel:'IONIQ 5',                            role:'Vehicle supplier',  notes:'Avride operates IONIQ 5 robotaxis on Uber platform in Dallas and Austin.' },
   { oem:'Volkswagen Group', logo:'🟡', avPartner:'Mobileye', vehicleModel:'ID. Buzz AD',                       role:'JV vehicle supplier', notes:'480 VW ID. Buzz AD (electric minivan) contracted with Uber for 2026 LA commercial launch. Hamburg supervised commercial ops.' },
